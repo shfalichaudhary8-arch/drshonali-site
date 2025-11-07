@@ -1,11 +1,7 @@
-// next.config.js
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/,
-});
-
-/** @type {import('next').NextConfig} */
-module.exports = withMDX({
-  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+// next.config.js (simple config, MDX removed)
+ /** @type {import('next').NextConfig} */
+const nextConfig = {
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-});
+};
+module.exports = nextConfig;
